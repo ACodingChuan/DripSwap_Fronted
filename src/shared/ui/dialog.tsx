@@ -1,4 +1,5 @@
 import * as DialogPrimitive from '@radix-ui/react-dialog';
+import { X } from 'lucide-react';
 import * as React from 'react';
 
 import { cn } from '@/shared/utils';
@@ -34,8 +35,8 @@ const DialogContent = React.forwardRef<React.ElementRef<typeof DialogPrimitive.C
       >
         {children}
         <DialogPrimitive.Close className="absolute right-4 top-4 rounded-full p-1 text-muted-foreground transition hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary">
-          <span className="sr-only">Close</span>
-          ×
+          <span className="sr-only">Close dialog</span>
+          <X className="size-4" aria-hidden="true" />
         </DialogPrimitive.Close>
       </DialogPrimitive.Content>
     </DialogPortal>
@@ -68,6 +69,7 @@ const DialogFooter = ({ className, ...props }: React.ComponentProps<'div'>) => (
 export {
   Dialog,
   DialogTrigger,
+  DialogPortal,
   DialogContent,
   DialogOverlay,
   DialogClose,

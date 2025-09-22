@@ -19,6 +19,11 @@
   --card: 0 0% 100%;
   --card-foreground: 240 10% 3.9%;
   --radius: 1rem;
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 0.75rem;
+  --space-lg: 1.25rem;
+  --space-xl: 2rem;
 }
 
 .dark {
@@ -41,6 +46,11 @@
   --ring: 221 73% 57%;
   --card: 240 10% 3.9%;
   --card-foreground: 0 0% 98%;
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 0.75rem;
+  --space-lg: 1.25rem;
+  --space-xl: 2rem;
 }
 
 * {
